@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4118981BB2718A39FE0CA4E7 /* Pods_MovieDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E882D3A3DB4F36ADD1C82FA /* Pods_MovieDemo.framework */; };
+		870ED9E320C8564F001D00A1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED9E220C8564F001D00A1 /* Movie.swift */; };
+		870ED9E520C85761001D00A1 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED9E420C85761001D00A1 /* AppConstants.swift */; };
+		870ED9E720C85F62001D00A1 /* Modelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED9E620C85F62001D00A1 /* Modelable.swift */; };
+		870ED9E920C860FD001D00A1 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED9E820C860FD001D00A1 /* MovieManager.swift */; };
 		8784F24620C6DB6E00EC8CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8784F24520C6DB6E00EC8CAE /* AppDelegate.swift */; };
 		8784F24B20C6DB6E00EC8CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8784F24920C6DB6E00EC8CAE /* Main.storyboard */; };
 		8784F24D20C6DB6E00EC8CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8784F24C20C6DB6E00EC8CAE /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		4313C1BE6E426DDABA43B048 /* Pods-MovieDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieDemo/Pods-MovieDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7E882D3A3DB4F36ADD1C82FA /* Pods_MovieDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870ED9E220C8564F001D00A1 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		870ED9E420C85761001D00A1 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		870ED9E620C85F62001D00A1 /* Modelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Modelable.swift; sourceTree = "<group>"; };
+		870ED9E820C860FD001D00A1 /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		8784F24220C6DB6E00EC8CAE /* MovieDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8784F24520C6DB6E00EC8CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8784F24A20C6DB6E00EC8CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +66,16 @@
 				7E882D3A3DB4F36ADD1C82FA /* Pods_MovieDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		870ED9E120C85643001D00A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				870ED9E620C85F62001D00A1 /* Modelable.swift */,
+				870ED9E220C8564F001D00A1 /* Movie.swift */,
+				870ED9E820C860FD001D00A1 /* MovieManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8784F23920C6DB6E00EC8CAE = {
@@ -101,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8784F26120C6FC9800EC8CAE /* Extensions.swift */,
+				870ED9E420C85761001D00A1 /* AppConstants.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -137,6 +156,7 @@
 		8784F27320C70AB600EC8CAE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				870ED9E120C85643001D00A1 /* Model */,
 				8784F28020C70B1E00EC8CAE /* Presenter */,
 				8784F27F20C70B1400EC8CAE /* View */,
 			);
@@ -316,12 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870ED9E920C860FD001D00A1 /* MovieManager.swift in Sources */,
 				8784F28220C70B8F00EC8CAE /* HomePresenter.swift in Sources */,
+				870ED9E520C85761001D00A1 /* AppConstants.swift in Sources */,
 				8784F27B20C70AB700EC8CAE /* HomeCollectionViewCell.swift in Sources */,
+				870ED9E720C85F62001D00A1 /* Modelable.swift in Sources */,
 				8784F24620C6DB6E00EC8CAE /* AppDelegate.swift in Sources */,
 				8784F26020C6FC6D00EC8CAE /* HttpRequest.swift in Sources */,
 				8784F27E20C70AB700EC8CAE /* SplashViewController.swift in Sources */,
 				8784F27D20C70AB700EC8CAE /* HomeViewController.swift in Sources */,
+				870ED9E320C8564F001D00A1 /* Movie.swift in Sources */,
 				8784F26220C6FC9800EC8CAE /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

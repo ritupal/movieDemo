@@ -9,12 +9,10 @@
 import Foundation
 import SVProgressHUD
 
-enum ApiUrl: String {
-    case home = "https://api.myjson.com/bins/3b0u2"
-}
 
 typealias JSONDictionary = [String: Any]
 typealias HTTPResponse = (JSONDictionary?, String) -> Void
+typealias ResponseType = [String: Any]
 
 class HttpRequest {
     

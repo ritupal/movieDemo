@@ -76,3 +76,8 @@ extension  UITableView {
     }
 
 }
+
+enum AppDateFormat: String {
+    case basic = "yyyy-MM-dd"
+    case releaseFormar = "MMM dd yyyy"
+}
